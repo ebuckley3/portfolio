@@ -51,7 +51,7 @@ header {
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    max-width: 100%; /* Matches the banner width */
+    max-width: 100%;
     margin: 0 auto;
     text-align: left;
     gap: 20px;
@@ -65,25 +65,26 @@ header {
 }
 
 .profile-text {
-    max-width: 800px; /* Matches the width of the container */
+    max-width: 150px; /* Matches the width of the profile picture */
     text-align: left;
+    font-size: 24pt; /* Sets the font size to 24pt */
 }
 
 .profile-text p {
     margin: 0;
-    font-size: 48px; /* 3x larger than 16px */
     color: #333;
 }
 
 .profile-text a {
-    font-size: 16px; /* Regular size for the email link */
+    font-size: 24pt; /* Ensures email link is 24pt */
     color: #333;
     text-decoration: none;
 }
 
 .profile-text a:hover {
-    text-decoration: underline; /* Underline on hover for emphasis */
+    text-decoration: underline;
 }
+
 
 
 
