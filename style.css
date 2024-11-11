@@ -17,23 +17,31 @@ header {
 
 /* Styling for the navigation bar */
 .navbar {
-    background-color: #333; /* Dark background color */
-    overflow: hidden;
     display: flex;
-    justify-content: center; /* Centers the nav links */
-    padding: 10px 0;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 20px; /* Spacing between each button */
+    padding: 20px 0; /* Space around the nav bar */
+    background-color: white;
 }
 
-.navbar a {
-    color: white; /* Text color */
+.nav-button {
+    background-color: #c0c0c0; /* Light grey background */
+    color: black; /* Black text */
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 12px 24px; /* Padding to make the buttons rectangular */
     font-size: 16px;
-    display: block;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #888888; /* Creates a 3D shadow effect */
+    transition: transform 0.1s ease; /* Smooth transition for press effect */
 }
 
-.navbar a:hover {
-    background-color: #575757; /* Darker background on hover */
-    border-radius: 4px;
+.nav-button:hover {
+    background-color: #a9a9a9; /* Darker grey on hover */
+}
+
+.nav-button:active {
+    transform: translateY(2px); /* Pressed effect */
+    box-shadow: 1px 1px 3px #666666; /* Adjusts shadow on press */
 }
 
