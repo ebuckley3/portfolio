@@ -19,7 +19,7 @@ header {
 .navbar {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px; /* Increased gap for larger buttons */
     padding: 20px 0;
     background-color: white;
 }
@@ -28,11 +28,11 @@ header {
     background-color: #c0c0c0;
     color: black;
     text-decoration: none;
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 24px 48px; /* Doubled padding for larger button size */
+    font-size: 32px; /* Increased font size */
     font-weight: bold;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px #888888;
+    box-shadow: 4px 4px 10px #888888; /* Increased shadow for larger buttons */
     transition: transform 0.1s ease;
 }
 
@@ -41,8 +41,8 @@ header {
 }
 
 .nav-button:active {
-    transform: translateY(2px);
-    box-shadow: 1px 1px 3px #666666;
+    transform: translateY(4px); /* Increased pressed effect for larger button */
+    box-shadow: 2px 2px 5px #666666;
 }
 
 /* Profile section styling */
@@ -53,7 +53,7 @@ header {
 }
 
 .profile-pic {
-    width: 200px; /* Increased width for larger profile picture */
+    width: 200px;
     height: auto;
     border-radius: 8px;
     box-shadow: 2px 2px 5px #888888;
@@ -61,11 +61,11 @@ header {
 
 /* Bio text styling */
 .bio-text {
-    max-width: 800px; /* Matches the width of the banner */
-    margin: 20px auto; /* Centers the bio section horizontally */
-    text-align: left; /* Aligns the bio text to the left */
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
     padding: 20px;
-    font-size: 24pt; /* Font size for bio and email */
+    font-size: 24pt;
     color: #333;
 }
 
@@ -75,10 +75,10 @@ header {
 
 /* Styling for all hyperlinks */
 a {
-    color: blue; /* Sets all hyperlinks to blue */
+    color: blue;
     text-decoration: underline;
 }
 
 a:hover {
-    color: darkblue; /* Changes to dark blue on hover */
+    color: darkblue;
 }
