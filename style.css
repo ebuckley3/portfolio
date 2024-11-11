@@ -65,7 +65,7 @@ header {
     margin: 20px auto; /* Centers the bio section horizontally */
     text-align: left; /* Aligns the bio text to the left */
     padding: 20px;
-    font-size: 24pt; /* Sets font size for bio and email */
+    font-size: 24pt; /* Font size for bio and email */
     color: #333;
 }
 
@@ -73,12 +73,8 @@ header {
     margin: 0;
 }
 
-.bio-text a {
-    font-size: 24pt; /* Ensures email link matches bio font size */
-    color: #333;
-    text-decoration: none;
-}
-
-.bio-text a:hover {
-    text-decoration: underline;
+/* Styling for the email link */
+.email-link {
+    color: blue; /* Sets the email link to blue */
+    text-decoration: underline; /* Adds underline for standard hyperlink look */
 }
