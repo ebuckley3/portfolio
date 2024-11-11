@@ -49,12 +49,7 @@ header {
 .profile {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     padding: 20px;
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: left;
-    gap: 20px;
 }
 
 .profile-pic {
@@ -64,25 +59,28 @@ header {
     box-shadow: 2px 2px 5px #888888;
 }
 
-.profile-text {
-    max-width: 150px; /* Matches the width of the profile picture */
+/* Bio text styling */
+.bio-text {
+    max-width: 800px; /* Matches the width of the banner */
+    margin: 0 auto; /* Centers the bio section */
     text-align: left;
-    font-size: 24pt; /* Sets the font size for bio text and link */
+    padding: 20px;
+    font-size: 24pt; /* Font size for bio and email */
     color: #333;
 }
 
-.profile-text p {
+.bio-text p {
     margin: 0;
 }
 
-.profile-text a {
-    font-size: 24pt; /* Ensures email link matches bio font size */
+.bio-text a {
+    font-size: 24pt;
     color: #333;
     text-decoration: none;
 }
 
-.profile-text a:hover {
-    text-decoration: underline; /* Underline effect on hover for emphasis */
+.bio-text a:hover {
+    text-decoration: underline;
 }
 
 
