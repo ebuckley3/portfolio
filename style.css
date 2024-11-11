@@ -73,19 +73,12 @@ header {
     margin: 0;
 }
 
-/* Styling for the email link */
-.email-link {
-    color: blue; /* Sets the email link to blue */
+/* Styling for all hyperlinks */
+a {
+    color: blue; /* Sets all hyperlinks to blue */
     text-decoration: underline;
 }
 
-/* Styling for Emilie Buckley name link */
-.name-link {
-    color: blue; /* Sets the link color to blue */
-    text-decoration: underline; /* Adds underline */
+a:hover {
+    color: darkblue; /* Changes to dark blue on hover */
 }
-
-.name-link:hover {
-    color: darkblue; /* Changes to dark blue on hover for emphasis */
-}
-
