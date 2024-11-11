@@ -1,18 +1,39 @@
-/* Basic styling for the page */
+/* Basic styling for the body and header */
 body {
     margin: 0;
     padding: 0;
     background-color: white;
-    font-family: Arial, sans-serif;
-    text-align: center; /* Centers the content */
+    text-align: center;
 }
 
-/* Styling for the header and banner */
 header {
-    padding-top: 20px; /* Adds space at the top */
+    padding-top: 20px;
 }
 
 .banner {
-    max-width: 100%; /* Ensures the image is responsive */
-    height: auto; /* Maintains image aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
+
+/* Styling for the navigation bar */
+.navbar {
+    background-color: #333; /* Dark background color */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centers the nav links */
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white; /* Text color */
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 4px;
+}
+
