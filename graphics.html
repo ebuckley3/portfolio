@@ -3,35 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
+    <title>AI and Consent Zine</title>
     <style>
-        /* Styling for the header image */
-        #aiheader {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        /* Full-width header styling */
+        .header-container {
             width: 100%;
-            height: auto;
+            text-align: center;
+            margin-bottom: 20px;
         }
 
+        /* Styling the header image */
+        #aiheader {
+            width: 100%;
+            height: auto; /* Adjust height as needed */
+            max-height: 300px; /* Optional: limits the height if image is large */
+            object-fit: cover;
+        }
+
+        /* Description styling */
+        .description {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        /* Carousel container styling */
         .carousel-container {
             position: relative;
-            max-width: 100%;
-            width: 600px; /* Adjust as needed */
-            margin: auto;
+            max-width: 600px;
+            margin: 20px auto;
+            overflow: hidden; /* Ensures only one image displays at a time */
         }
 
+        /* Carousel images styling */
         .carousel-images {
             display: flex;
             transition: transform 0.5s ease-in-out;
+            width: calc(100% * 4); /* Width to accommodate all images */
         }
 
         .carousel-images img {
-            width: 100%;
-            height: auto;
+            width: 100%; /* Ensures each image fills the container width */
+            flex: 0 0 100%; /* Each image takes full width of the container */
             display: block;
         }
 
+        /* Arrow button styling */
         .prev, .next {
             position: absolute;
             top: 50%;
@@ -47,32 +65,26 @@
         }
 
         .prev {
-            left: 10px; /* Adjust the position from the left */
+            left: -50px; /* Adjusts the position from the left */
         }
 
         .next {
-            right: 10px; /* Adjust the position from the right */
+            right: -50px; /* Adjusts the position from the right */
         }
 
         .prev:hover, .next:hover {
             background-color: rgba(0, 0, 0, 1); /* Darker on hover */
         }
-
-        /* Styling for the paragraph above the carousel */
-        .description {
-            max-width: 600px;
-            margin: 20px auto;
-            font-size: 18px;
-            text-align: center;
-        }
     </style>
 </head>
 <body>
 
-<!-- Header Image -->
-<img id="aiheader" src="images/aiheader.jpg" alt="AI Header">
+<!-- Header Image Container at the very top -->
+<div class="header-container">
+    <img id="aiheader" src="images/aiheader.png" alt="AI Header">
+</div>
 
-<!-- Paragraph Description Above the Carousel -->
+<!-- Description paragraph below the header image -->
 <div class="description">
     <p>This carousel features a collection of images showcasing the different zines I have created. Use the arrows on the sides to navigate through the images and explore them in detail. The left and right buttons allow you to easily cycle through the images to get a closer look at each zine. Enjoy!</p>
 </div>
@@ -81,10 +93,10 @@
 <div class="carousel-container">
     <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
     <div class="carousel-images">
-        <img src="zine1.png" alt="Zine 1">
-        <img src="zine2.png" alt="Zine 2">
-        <img src="zine3.png" alt="Zine 3">
-        <img src="zine4.png" alt="Zine 4">
+        <img src="images/zine1.png" alt="Zine 1">
+        <img src="images/zine2.png" alt="Zine 2">
+        <img src="images/zine3.png" alt="Zine 3">
+        <img src="images/zine4.png" alt="Zine 4">
     </div>
     <button class="next" onclick="changeSlide(1)">&#10095;</button>
 </div>
@@ -105,7 +117,7 @@
     }
 
     function updateCarousel() {
-        const offset = -currentSlide * 100;
+        const offset = -currentSlide * 100; // Display one image at a time
         document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
     }
 </script>
