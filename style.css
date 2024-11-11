@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: center; /* Centers the buttons horizontally */
     gap: 20px; /* Spacing between each button */
-    padding: 20px 0; /* Space around the nav bar */
+    padding: 20px 0; /* Adds space above and below the nav bar */
     background-color: white;
 }
 
