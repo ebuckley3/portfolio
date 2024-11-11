@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Carousel</title>
+    <title>AI and Consent Zine</title>
     <style>
-        /* Centering and styling the AI header */
+        /* Centering and styling the AI header at the top */
         #aiheader {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-            height: 200px; /* Reduced height by 1/3 */
+            margin: 0 auto 20px; /* Centered horizontally with space below */
+            width: 60%; /* Adjust width as needed */
+            height: auto;
             object-fit: cover;
         }
 
-        /* Description container */
+        /* Description container styling */
         .description-container {
-            max-width: 100%;
-            width: 600px;
+            max-width: 600px;
             text-align: left;
             margin: 0 auto;
             padding: 10px;
@@ -27,21 +25,21 @@
         /* Carousel container styling */
         .carousel-container {
             position: relative;
-            max-width: 100%;
-            width: 600px;
-            margin: auto;
+            max-width: 600px;
+            margin: 20px auto; /* Centered with spacing around */
             overflow: hidden; /* Ensures only one image is displayed at a time */
         }
 
+        /* Carousel images styling */
         .carousel-images {
             display: flex;
             transition: transform 0.5s ease-in-out;
-            width: 400%; /* Width to accommodate all images */
+            width: calc(100% * 4); /* Set to number of images * 100% */
         }
 
         .carousel-images img {
             width: 100%; /* Ensures only one image shows at a time */
-            height: auto;
+            flex: 0 0 100%; /* Forces each image to occupy full carousel width */
             display: block;
         }
 
@@ -70,15 +68,18 @@
 </head>
 <body>
 
+<!-- Header image at the top of the page -->
 <div style="text-align: center;">
     <img id="aiheader" src="images/aiheader.png" alt="AI Banner">
 </div>
 
+<!-- Description paragraph below the header and above the carousel -->
 <div class="description-container">
     <h1>AI and Consent Zine</h1>
     <p>This zine explores the concept of consent in human-AI interactions, particularly through the lens of AI chatbots. Inspired by childhood exposure to futuristic technology, like the Sony AIBO, and shaped by recent readings on AI ethics, the zine reflects on how society has been primed to anthropomorphize AI. Drawing on personal experiences with Replika, a social AI chatbot, and the ethical implications of AI-generated content (such as political imagery and inappropriate chatbot behaviors), the zine examines whether humanity is neglecting the issue of consent in its interactions with technology. Through experimentation with AI image generators and chatbot conversations, the zine questions whether these interactions shape our understanding of consent in the real world, and whether we are inadvertently normalizing consent violations.</p>
 </div>
 
+<!-- Image carousel -->
 <div class="carousel-container">
     <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
     <div class="carousel-images">
