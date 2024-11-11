@@ -67,23 +67,24 @@ header {
 .profile-text {
     max-width: 150px; /* Matches the width of the profile picture */
     text-align: left;
-    font-size: 24pt; /* Sets the font size to 24pt */
+    font-size: 24pt; /* Sets the font size for bio text and link */
+    color: #333;
 }
 
 .profile-text p {
     margin: 0;
-    color: #333;
 }
 
 .profile-text a {
-    font-size: 24pt; /* Ensures email link is 24pt */
+    font-size: 24pt; /* Ensures email link matches bio font size */
     color: #333;
     text-decoration: none;
 }
 
 .profile-text a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline effect on hover for emphasis */
 }
+
 
 
 
