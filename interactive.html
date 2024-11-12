@@ -76,14 +76,18 @@
             width: 1000px;
             height: 1000px;
         }
+
+        /* Center the gingerbreadman image */
         #gingerbread-image {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 50%;
+            left: 50%;
             width: 500px; /* Fixed size for the image */
             height: 500px; /* Fixed size for the image */
             z-index: 1;
+            transform: translate(-50%, -50%); /* Centers the image */
         }
+
         .interactive-zone {
             position: absolute;
             border: 2px solid transparent;
@@ -92,6 +96,7 @@
         .interactive-zone:hover {
             border-color: white;
         }
+
         #custom-alert {
             position: fixed;
             top: 50%;
@@ -105,6 +110,7 @@
             display: none;
             z-index: 1000;
         }
+
         #custom-alert button {
             background-color: white;
             color: black;
