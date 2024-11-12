@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations</title>
+    <style>
+        /* Resetting default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            background-color: #ccc;
+            border: 2px solid #888;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.1s ease;
+        }
+        .button:active {
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Image at the Top -->
+    <img src="images/visual.png" alt="Visualizations Header" class="header-image">
+
+    <!-- 3D Buttons -->
+    <div class="button-container">
+        <a href="index.html" class="button">Home</a>
+        <a href="graphics.html" class="button">Graphics</a>
+        <a href="interactive.html" class="button">Interactive</a>
+    </div>
+</body>
+</html>
