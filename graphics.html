@@ -3,85 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI and Consent Zine</title>
+    <title>AI Banner Page</title>
     <style>
-        /* Full-width header styling */
-        .header-container {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Styling the header image */
-        #aiheader {
-            width: 100%;
-            height: auto; /* Maintain aspect ratio */
-            max-height: 300px; /* Optional: limits the height if the image is large */
-            object-fit: cover;
-        }
-
-        /* Description styling */
-        .description {
-            max-width: 600px;
-            margin: 20px auto;
-            font-size: 18px;
-            text-align: center;
-        }
-
-        /* Carousel container styling */
-        .carousel-container {
-            position: relative;
-            max-width: 600px;
-            margin: 20px auto;
-            overflow: hidden; /* Ensures only one image displays at a time */
-        }
-
-        /* Carousel images styling */
-        .carousel-images {
+        body {
             display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 100%; /* Adjust to accommodate images */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
         }
-
-        .carousel-images img {
-            width: 100%; /* Ensures each image fills the container width */
-            flex: 0 0 100%; /* Each image takes full width of the container */
-            display: block;
+        .container {
+            text-align: center;
         }
-
-        /* Arrow button styling */
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.8); /* Dark background for better visibility */
-            color: white;
-            border: none;
-            padding: 15px;
-            cursor: pointer;
-            font-size: 30px; /* Larger arrows */
-            border-radius: 50%;
-            z-index: 10; /* Ensure arrows are on top of images */
-        }
-
-        .prev {
-            left: -40px; /* Adjusts the position from the left */
-        }
-
-        .next {
-            right: -40px; /* Adjusts the position from the right */
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 1); /* Darker on hover */
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-
-<!-- Header Image at the top -->
-<div class="header-container">
-    <img id="aiheader" src="images/aiheader.png" alt="AI Header">
-</div>
-
-<!-- Description paragraph below
+    <div class="container">
+        <img src="images/aibanner.png" alt="AI Banner">
+    </div>
+</body>
+</html>
