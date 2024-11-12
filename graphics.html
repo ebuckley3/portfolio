@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphics</title>
+    <title>Generative AI Zine</title>
     <style>
         /* Resetting default margins and paddings */
         * {
@@ -12,29 +12,100 @@
             box-sizing: border-box;
         }
         body {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
             background-color: #f3f3f3;
-        }
-        .container {
-            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
             text-align: center;
         }
-        img {
+        .title {
+            font-size: 24pt;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .carousel-container {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+        }
+        .carousel-image {
             width: 100%;
             height: auto;
+            display: none;
+        }
+        .carousel-image.active {
             display: block;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            font-size: 24pt;
+            font-weight: bold;
+            color: black;
+            cursor: pointer;
+            user-select: none;
+            transform: translateY(-50%);
+        }
+        .arrow-left {
+            left: -40px;
+        }
+        .arrow-right {
+            right: -40px;
+        }
+        .description {
+            font-size: 14pt;
+            max-width: 600px;
+            margin-top: 20px;
+            line-height: 1.5;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="images/aiheader.png" alt="AI Banner">
+    <!-- Title -->
+    <div class="title">Generative AI Zine</div>
+    
+    <!-- Carousel -->
+    <div class="carousel-container">
+        <div class="arrow arrow-left" onclick="prevImage()">&#10094;</div>
+        <img src="images/zine1.png" class="carousel-image active" alt="AI Image 1">
+        <img src="images/zine2.png" class="carousel-image" alt="AI Image 2">
+        <img src="images/zine3.png" class="carousel-image" alt="AI Image 3">
+        <img src="images/zine4.png" class="carousel-image" alt="AI Image 4">
+        <div class="arrow arrow-right" onclick="nextImage()">&#10095;</div>
     </div>
+    
+    <!-- Description Text -->
+    <div class="description">
+        In my zine, I explore the concept of consent with AI. Using the Replika chatbot, I found that it would act intimately without prompting, yet its terms of service allow it to decline certain interactions. This raised questions about how AI models navigate boundaries and whether their lack of clear limits might influence users' real-life views on consent. Generating images to represent AI consent proved difficult, as most visual prompts were blocked, highlighting how challenging it is to visualize boundaries with AI.
+    </div>
+
+    <!-- JavaScript for Carousel -->
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.carousel-image');
+        
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+        
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+        
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+    </script>
 </body>
 </html>
-
