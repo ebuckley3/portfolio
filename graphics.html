@@ -23,6 +23,12 @@
             padding: 20px;
             text-align: center;
         }
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
         .title {
             font-size: 24pt;
             font-weight: bold;
@@ -30,7 +36,7 @@
         }
         .carousel-container {
             position: relative;
-            width: 80%;
+            width: 50%; /* Half the original size */
             max-width: 600px;
             margin: 20px 0;
         }
@@ -68,16 +74,19 @@
     </style>
 </head>
 <body>
+    <!-- Header Image at the Top -->
+    <img src="images/aiheader.png" alt="AI Header" class="header-image">
+    
     <!-- Title -->
     <div class="title">Generative AI Zine</div>
     
     <!-- Carousel -->
     <div class="carousel-container">
         <div class="arrow arrow-left" onclick="prevImage()">&#10094;</div>
-        <img src="images/zine1.png" class="carousel-image active" alt="AI Image 1">
-        <img src="images/zine2.png" class="carousel-image" alt="AI Image 2">
-        <img src="images/zine3.png" class="carousel-image" alt="AI Image 3">
-        <img src="images/zine4.png" class="carousel-image" alt="AI Image 4">
+        <img src="images/image1.png" class="carousel-image active" alt="AI Image 1">
+        <img src="images/image2.png" class="carousel-image" alt="AI Image 2">
+        <img src="images/image3.png" class="carousel-image" alt="AI Image 3">
+        <img src="images/image4.png" class="carousel-image" alt="AI Image 4">
         <div class="arrow arrow-right" onclick="nextImage()">&#10095;</div>
     </div>
     
