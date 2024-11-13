@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humanities in the Age of AI Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styling for the Butler Bot link section */
+        .bot-link-container {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .bot-link {
+            color: blue;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        /* Flashing star animation */
+        .flashing-star {
+            animation: flash 1s infinite alternate;
+            color: gold;
+            font-size: 24px;
+            margin: 0 5px;
+        }
+        @keyframes flash {
+            from { opacity: 0.3; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,6 +42,13 @@
         <a href="visualizations.html" class="nav-button">Visualizations</a>
         <a href="interactive.html" class="nav-button">Interactive</a>
     </nav>
+
+    <!-- Butler Bot Link Section with Flashing Stars -->
+    <div class="bot-link-container">
+        <span class="flashing-star">⭐</span>
+        <a href="https://ebuckley3.github.io/Butler-Bot/" target="_blank" class="bot-link">Try the Butler Bot, a gender studies study buddy chatbot!</a>
+        <span class="flashing-star">⭐</span>
+    </div>
 
     <!-- Profile Section -->
     <section class="profile">
